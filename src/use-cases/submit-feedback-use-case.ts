@@ -1,4 +1,3 @@
-import { format } from 'node:path/win32'
 import { MailAdapter } from '../adapters/mail-adapter'
 import { FeedbackRepository } from '../repositories/feedbacks-repository'
 
