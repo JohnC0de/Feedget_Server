@@ -1,6 +1,5 @@
 import nodemailer from 'nodemailer'
 import 'dotenv/config'
-import { env } from 'process'
 import { MailAdapter, SendMailData } from '../mail-adapter'
 
 const transport = nodemailer.createTransport({
