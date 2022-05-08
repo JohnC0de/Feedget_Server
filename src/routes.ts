@@ -5,6 +5,10 @@ import { NodemailerMailAdapter } from './adapters/nodemailer/nodemailer-mail-ada
 
 export const routes = express.Router()
 
+routes.get('/welcome', (req, { send }) => {
+  return send('Welcome! Server is working!')
+})
+
 routes.post('/feedbacks', async (req, res) => {
   //Parameters from the body request
   const { type, comment, screenshot } = req.body
